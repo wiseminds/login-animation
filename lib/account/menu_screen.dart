@@ -8,12 +8,11 @@ import 'package:common/router/app_route.dart';
 import 'package:common/widgets/citi_dialog.dart';
 import 'package:customer/constants/svg_strings.dart';
 import 'package:customer/views/account/notifications_screen.dart';
-import 'package:customer/views/account/support_screen.dart'; 
+import 'package:customer/views/account/support_screen.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 import 'about_screen.dart';
 import 'profile_screen.dart';
 import 'settings_screen.dart';
-
 
 class MenuScreen extends StatelessWidget implements AppRoute {
   const MenuScreen({Key? key}) : super(key: key);
@@ -29,8 +28,6 @@ class MenuScreen extends StatelessWidget implements AppRoute {
   @override
   Transition get transition => Transition.cupertino;
 
-
-
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -45,8 +42,8 @@ class MenuScreen extends StatelessWidget implements AppRoute {
             Row(
               children: [
                 Text('Menu',
-                    style: context.headline4?.copyWith(
-                        fontSize: 16, fontWeight: FontWeight.bold)),
+                    style: context.headline4
+                        ?.copyWith(fontSize: 16, fontWeight: FontWeight.bold)),
                 .0.s,
                 Material(
                     clipBehavior: Clip.antiAlias,
@@ -186,7 +183,8 @@ class AccountTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var color = Get.isDarkMode ? const Color(0xFF27272B) : const Color(0xffF9F9FB);
+    var color =
+        Get.isDarkMode ? const Color(0xFF27272B) : const Color(0xffF9F9FB);
     return Padding(
       padding: const EdgeInsets.only(bottom: 16.0),
       child: Material(

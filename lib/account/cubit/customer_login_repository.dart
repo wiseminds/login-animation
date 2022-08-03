@@ -49,7 +49,8 @@ class CustomerLoginRepository extends LoginRepository {
     return _apiService.updateProfileAlt(body, isFile);
   }
 
-    Future<ApiResponse<User, User>> social( SocialOptions option, SocialAuthResult result) {
+  Future<ApiResponse<User, User>> social(
+      SocialOptions option, SocialAuthResult result) {
     return _apiService.socialLogin(option, result);
   }
 

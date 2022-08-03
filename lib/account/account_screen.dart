@@ -14,8 +14,8 @@ import 'package:customer/views/share_n_earn/share_and_earn.dart';
 import 'package:customer/views/tab/tab_view.dart';
 import 'package:customer/widgets/gradient_decoration.dart';
 import 'package:customer/widgets/menu_button.dart';
-import 'package:flutter/material.dart'; 
-import 'profile_screen.dart'; 
+import 'package:flutter/material.dart';
+import 'profile_screen.dart';
 
 class AccountScreen extends StatelessWidget implements AppRoute {
   const AccountScreen({Key? key}) : super(key: key);

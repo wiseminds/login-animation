@@ -58,7 +58,6 @@ class SocialRow extends StatelessWidget {
               option: SocialOptions.apple,
               socialLogin: AppleLogin(),
               onPressed: (result) {
-                
                 login(SocialOptions.apple, result);
               })
         ],
